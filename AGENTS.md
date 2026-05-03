@@ -51,6 +51,24 @@ Every task follows this loop:
 - After changes, run tests, builds, or static checks whenever possible.
 - If verification is not possible, explain why in the final report.
 
+## Skill Discovery and Reuse
+
+Before starting any complex task, follow this skill lookup order:
+
+1. **Check local skills first**: Look in `.agents/skills/` for a reusable skill.
+   - If a suitable skill exists, read its `SKILL.md` and follow the instructions.
+2. **Search externally if needed**: If no local skill fits, search GitHub or Skills.sh for relevant skills.
+   - Prefer skills with clear source, complete documentation, low risk, and active maintenance.
+3. **Install a skill**: Save it to `.agents/skills/<skill-name>/` with `SKILL.md` as the main entry file.
+   - Place all related scripts, templates, and resources in the same skill directory.
+4. **Reuse on repeat tasks**: Once installed, use the skill directly in future sessions.
+5. **Create a new skill**: If no suitable skill exists anywhere, complete the task manually — then consider saving the reusable steps as a new local skill.
+
+Rules:
+- Do not install duplicate skills; keep the directory clean and names clear.
+- Do not install skills from unknown or high-risk sources.
+- Never write passwords, API keys, or access tokens into any skill file.
+
 ## Completion Checklist
 
 Before marking any task complete, verify:
