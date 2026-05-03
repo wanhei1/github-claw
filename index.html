@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of an AI Engineer and Computer Vision Researcher at Beijing Institute of Technology, specializing in deep learning, infrared image recognition, and medical image analysis." />
+  <meta name="keywords" content="AI, Computer Vision, Deep Learning, Infrared Image Recognition, PyTorch, YOLO, BIT, Beijing Institute of Technology" />
+  <meta name="author" content="[Your Name]" />
+  <meta property="og:title" content="[Your Name] | AI Engineer & Computer Vision Researcher" />
+  <meta property="og:description" content="Building intelligent systems with computer vision, deep learning, and real-world AI applications." />
+  <meta property="og:type" content="website" />
+  <title>[Your Name] | AI Engineer &amp; Computer Vision Researcher</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a class="nav-logo" href="#home" aria-label="Go to home">[YN]</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark/light mode">
+        <span class="theme-icon">🌙</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home" aria-label="Hero section">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-content">
+      <span class="hero-badge">AI Engineer &amp; Computer Vision Researcher</span>
+      <h1 class="hero-title">Hi, I'm <span class="gradient-text">[Your Name]</span></h1>
+      <p class="hero-subtitle">
+        Building intelligent systems with computer vision, deep learning, and real-world AI applications.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-social" aria-label="Social links">
+        <a href="https://github.com/[your-github]" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.9.57.1.78-.25.78-.55v-2.16c-3.19.7-3.86-1.37-3.86-1.37-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.55-.29-5.23-1.27-5.23-5.67 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.17a10.9 10.9 0 012.87-.39c.97 0 1.95.13 2.87.39 2.19-1.48 3.15-1.17 3.15-1.17.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.07 0 4.41-2.69 5.38-5.25 5.66.41.36.78 1.06.78 2.13v3.16c0 .3.2.66.79.55C20.71 21.37 24 17.08 24 12 24 5.73 18.27.5 12 .5z"/></svg>
+          GitHub
+        </a>
+        <a href="mailto:[your-email]@example.com" aria-label="Send email" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Email
+        </a>
+        <a href="https://linkedin.com/in/[your-linkedin]" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM3.56 20.45h3.56V9H3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.21 24 24 23.23 24 22.28V1.72C24 .77 23.21 0 22.23 0z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+    <div class="hero-decoration" aria-hidden="true">
+      <div class="floating-card card-1">
+        <span class="card-icon">🤖</span>
+        <span>Deep Learning</span>
+      </div>
+      <div class="floating-card card-2">
+        <span class="card-icon">👁️</span>
+        <span>Computer Vision</span>
+      </div>
+      <div class="floating-card card-3">
+        <span class="card-icon">🔬</span>
+        <span>Research</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about" aria-label="About section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">About Me</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a graduate student at <strong>Beijing Institute of Technology (BIT)</strong>, specializing in
+            Artificial Intelligence and Computer Vision. My work focuses on algorithm design, model training,
+            engineering implementation, and real-world AI deployment.
+          </p>
+          <p>
+            My research interests span <strong>infrared image recognition</strong>, <strong>medical image
+            analysis</strong>, and <strong>traditional Chinese medicine facial diagnosis</strong>. I'm passionate
+            about bridging the gap between cutting-edge AI research and practical applications that solve
+            real-world problems.
+          </p>
+          <p>
+            Beyond research, I enjoy building end-to-end AI systems, from data preprocessing and model
+            architecture design to deployment and optimization on constrained devices.
+          </p>
+          <div class="about-tags" aria-label="Identity tags">
+            <span class="tag">📍 Beijing, China</span>
+            <span class="tag">🎓 Graduate Student at BIT</span>
+            <span class="tag">🧠 AI / Computer Vision</span>
+            <span class="tag">🔭 Infrared Image Recognition</span>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number gradient-text">4+</span>
+            <span class="stat-label">Research Projects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number gradient-text">3+</span>
+            <span class="stat-label">Years of AI Development</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number gradient-text">6+</span>
+            <span class="stat-label">Tech Stacks</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number gradient-text">∞</span>
+            <span class="stat-label">Curiosity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-alt" id="skills" aria-label="Skills section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Skills</span>
+        <h2 class="section-title">What I Work With</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">
+            <span class="skill-group-icon" aria-hidden="true">💻</span>
+            Programming
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript / TypeScript</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">
+            <span class="skill-group-icon" aria-hidden="true">🧠</span>
+            AI / Deep Learning
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">YOLO</span>
+            <span class="skill-tag">CNN</span>
+            <span class="skill-tag">Transformer</span>
+            <span class="skill-tag">OpenCV</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">
+            <span class="skill-group-icon" aria-hidden="true">🔬</span>
+            Research Areas
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Computer Vision</span>
+            <span class="skill-tag">Infrared Image Recognition</span>
+            <span class="skill-tag">Medical Image Analysis</span>
+            <span class="skill-tag">TCM Facial Analysis</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">
+            <span class="skill-group-icon" aria-hidden="true">⚙️</span>
+            Engineering
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">PostgreSQL</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects" aria-label="Projects section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Projects</span>
+        <h2 class="section-title">What I've Built</h2>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-icon" aria-hidden="true">🌡️</span>
+            <span class="project-status">Research</span>
+          </div>
+          <h3 class="project-title">Infrared Image Recognition</h3>
+          <p class="project-desc">
+            Deep learning-based system for infrared image classification and target detection,
+            leveraging CNN and Transformer architectures with domain adaptation for thermal imaging datasets.
+          </p>
+          <div class="project-tags" aria-label="Tech stack">
+            <span class="project-tag">PyTorch</span>
+            <span class="project-tag">CNN</span>
+            <span class="project-tag">Transformer</span>
+            <span class="project-tag">OpenCV</span>
+          </div>
+          <a href="#" class="project-link" aria-label="View Infrared Image Recognition project">
+            View Project <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-icon" aria-hidden="true">🏥</span>
+            <span class="project-status">Research</span>
+          </div>
+          <h3 class="project-title">TCM Facial Analysis</h3>
+          <p class="project-desc">
+            AI-driven Traditional Chinese Medicine facial diagnosis system using facial landmark detection
+            and color analysis to assist clinical practitioners in health assessment.
+          </p>
+          <div class="project-tags" aria-label="Tech stack">
+            <span class="project-tag">PyTorch</span>
+            <span class="project-tag">OpenCV</span>
+            <span class="project-tag">CNN</span>
+            <span class="project-tag">MediaPipe</span>
+          </div>
+          <a href="#" class="project-link" aria-label="View TCM Facial Analysis project">
+            View Project <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-icon" aria-hidden="true">👕</span>
+            <span class="project-status">Full-Stack</span>
+          </div>
+          <h3 class="project-title">AI T-shirt Personalization Platform</h3>
+          <p class="project-desc">
+            End-to-end platform allowing users to generate personalized T-shirt designs using AI image
+            generation models, with real-time preview and e-commerce integration.
+          </p>
+          <div class="project-tags" aria-label="Tech stack">
+            <span class="project-tag">Next.js</span>
+            <span class="project-tag">Stable Diffusion</span>
+            <span class="project-tag">PostgreSQL</span>
+            <span class="project-tag">Express.js</span>
+          </div>
+          <a href="#" class="project-link" aria-label="View AI T-shirt Personalization Platform project">
+            View Project <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-icon" aria-hidden="true">🎯</span>
+            <span class="project-status">Engineering</span>
+          </div>
+          <h3 class="project-title">Object Detection with YOLO</h3>
+          <p class="project-desc">
+            High-performance real-time object detection pipeline built on YOLOv8, optimized for edge
+            deployment with TensorRT acceleration and custom dataset training workflows.
+          </p>
+          <div class="project-tags" aria-label="Tech stack">
+            <span class="project-tag">YOLO</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">TensorRT</span>
+            <span class="project-tag">Docker</span>
+          </div>
+          <a href="#" class="project-link" aria-label="View Object Detection with YOLO project">
+            View Project <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESEARCH ===== -->
+  <section class="section section-alt" id="research" aria-label="Research section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Research</span>
+        <h2 class="section-title">Research Interests</h2>
+      </div>
+      <div class="research-grid">
+
+        <div class="research-card">
+          <span class="research-icon" aria-hidden="true">🌡️</span>
+          <h3>Infrared Image Recognition</h3>
+          <p>Developing robust models for thermal imaging classification, detection, and segmentation under challenging environmental conditions.</p>
+        </div>
+
+        <div class="research-card">
+          <span class="research-icon" aria-hidden="true">🩺</span>
+          <h3>Computer Vision for Healthcare</h3>
+          <p>Applying vision algorithms to assist medical diagnosis, from skin lesion analysis to retinal image interpretation.</p>
+        </div>
+
+        <div class="research-card">
+          <span class="research-icon" aria-hidden="true">🏥</span>
+          <h3>TCM Facial Analysis</h3>
+          <p>Bridging traditional medicine and AI by building systems that analyze facial features for clinical TCM diagnosis support.</p>
+        </div>
+
+        <div class="research-card">
+          <span class="research-icon" aria-hidden="true">🔗</span>
+          <h3>Multimodal AI</h3>
+          <p>Exploring fusion of visual, textual, and sensor data to build richer AI systems for real-world understanding tasks.</p>
+        </div>
+
+        <div class="research-card">
+          <span class="research-icon" aria-hidden="true">🔍</span>
+          <h3>Explainable AI</h3>
+          <p>Building interpretable deep learning models with attention visualization and feature attribution methods for high-stakes applications.</p>
+        </div>
+
+        <div class="research-card">
+          <span class="research-icon" aria-hidden="true">⚡</span>
+          <h3>Lightweight Model Deployment</h3>
+          <p>Optimizing and compressing neural networks for efficient inference on edge devices using quantization, pruning, and knowledge distillation.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact" aria-label="Contact section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Contact</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Interested in collaboration, research, or just want to connect? Feel free to reach out.</p>
+      </div>
+      <div class="contact-grid">
+
+        <a href="mailto:[your-email]@example.com" class="contact-card" aria-label="Send email">
+          <span class="contact-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </span>
+          <div>
+            <h3 class="contact-label">Email</h3>
+            <span class="contact-value">[your-email]@example.com</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/[your-github]" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="GitHub profile">
+          <span class="contact-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.9.57.1.78-.25.78-.55v-2.16c-3.19.7-3.86-1.37-3.86-1.37-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.55-.29-5.23-1.27-5.23-5.67 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.17a10.9 10.9 0 012.87-.39c.97 0 1.95.13 2.87.39 2.19-1.48 3.15-1.17 3.15-1.17.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.07 0 4.41-2.69 5.38-5.25 5.66.41.36.78 1.06.78 2.13v3.16c0 .3.2.66.79.55C20.71 21.37 24 17.08 24 12 24 5.73 18.27.5 12 .5z"/></svg>
+          </span>
+          <div>
+            <h3 class="contact-label">GitHub</h3>
+            <span class="contact-value">github.com/[your-github]</span>
+          </div>
+        </a>
+
+        <a href="https://linkedin.com/in/[your-linkedin]" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="LinkedIn profile">
+          <span class="contact-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM3.56 20.45h3.56V9H3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.21 24 24 23.23 24 22.28V1.72C24 .77 23.21 0 22.23 0z"/></svg>
+          </span>
+          <div>
+            <h3 class="contact-label">LinkedIn</h3>
+            <span class="contact-value">linkedin.com/in/[your-linkedin]</span>
+          </div>
+        </a>
+
+        <a href="https://scholar.google.com/citations?user=[your-id]" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Google Scholar profile">
+          <span class="contact-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5 12 0z"/></svg>
+          </span>
+          <div>
+            <h3 class="contact-label">Google Scholar</h3>
+            <span class="contact-value">View Publications</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2026 <span>[Your Name]</span>. Built for GitHub Pages.</p>
+      <p class="footer-sub">Made with ❤️ using HTML, CSS &amp; JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
